@@ -1,0 +1,1060 @@
+name: vsflutter
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.1+1
+
+environment:
+  sdk: ^3.5.2
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  path: ^1.9.0
+  list_wheel_scroll_view_nls: ^0.0.3
+  #custom_mouse_cursor: ^1.1.2
+  #open_file: ^3.5.10
+  #file_picker: ^9.0.0
+  #process_run: ^1.2.2+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^4.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/test.txt
+
+    - assets\MGBA\licenses\blip_buf.txt
+    - assets\MGBA\licenses\discord-rpc.txt
+    - assets\MGBA\licenses\inih.txt
+    - assets\MGBA\licenses\mingw-std-threads.txt
+    - assets\MGBA\licenses\rapidjson.txt
+    - assets\MGBA\shaders\agb001.shader\agb001.fs
+    - assets\MGBA\shaders\agb001.shader\manifest.ini
+    - assets\MGBA\shaders\ags001.shader\ags001-light.fs
+    - assets\MGBA\shaders\ags001.shader\ags001.fs
+    - assets\MGBA\shaders\ags001.shader\manifest.ini
+    - assets\MGBA\shaders\fish.shader\fish.fs
+    - assets\MGBA\shaders\fish.shader\manifest.ini
+    - assets\MGBA\shaders\gba-color.shader\gba-color.fs
+    - assets\MGBA\shaders\gba-color.shader\manifest.ini
+    - assets\MGBA\shaders\lcd.shader\lcd.fs
+    - assets\MGBA\shaders\lcd.shader\manifest.ini
+    - assets\MGBA\shaders\motion_blur.shader\manifest.ini
+    - assets\MGBA\shaders\motion_blur.shader\motion_blur.fs
+    - assets\MGBA\shaders\pixelate.shader\manifest.ini
+    - assets\MGBA\shaders\scale2x.shader\manifest.ini
+    - assets\MGBA\shaders\scale2x.shader\scale2x.fs
+    - assets\MGBA\shaders\scale4x.shader\manifest.ini
+    - assets\MGBA\shaders\scale4x.shader\scale4x.fs
+    - assets\MGBA\shaders\scanlines.shader\manifest.ini
+    - assets\MGBA\shaders\scanlines.shader\scanlines.fs
+    - assets\MGBA\shaders\soften.shader\manifest.ini
+    - assets\MGBA\shaders\soften.shader\soften.fs
+    - assets\MGBA\shaders\tv-mode.shader\manifest.ini
+    - assets\MGBA\shaders\tv-mode.shader\tv.fs
+    - assets\MGBA\shaders\vba_pixelate.shader\manifest.ini
+    - assets\MGBA\shaders\vba_pixelate.shader\vba_pixelate.fs
+    - assets\MGBA\shaders\vignette.shader\manifest.ini
+    - assets\MGBA\shaders\vignette.shader\vignette.fs
+    - assets\MGBA\shaders\wiiu.shader\manifest.ini
+    - assets\MGBA\shaders\wiiu.shader\wiiu.fs
+    - assets\MGBA\shaders\xbr-lv2.shader\manifest.ini
+    - assets\MGBA\shaders\xbr-lv2.shader\xbr.fs
+    - assets\MGBA\shaders\xbr-lv2.shader\xbr.vs
+    - assets\MGBA\shaders\xbr-lv3.shader\manifest.ini
+    - assets\MGBA\shaders\xbr-lv3.shader\xbr.fs
+    - assets\MGBA\shaders\xbr-lv3.shader\xbr.vs
+    - assets\MGBA\CHANGES.txt
+    - assets\MGBA\LICENSE.txt
+    - assets\MGBA\mgba-sdl.exe
+    - assets\MGBA\mGBA.exe
+    - assets\MGBA\nointro.dat
+    - assets\MGBA\README.html
+    - assets\MGBA\unins000.dat
+    - assets\MGBA\unins000.exe
+
+    - assets\Desmume\Battery\Phoenix_Wright_Ace_Attorney_Trials_and_Tribulations.dsv
+    - assets\Desmume\Cheats\temp.txt.txt
+    - assets\Desmume\Roms\temp.txt.txt
+    - assets\Desmume\States\temp.txt.txt
+    - assets/Desmume/AUTHORS
+    - assets/Desmume/ChangeLog
+    - assets/Desmume/COPYING
+    - assets/Desmume/desmume.ddb
+    - assets/Desmume/desmume.ini
+    - assets/Desmume/DeSmuME_0.9.11_x64.exe
+    - assets/Desmume/README
+    - assets/Desmume/README.WIN
+
+    - assets/Mesen/Mesen.exe
+    - assets/VisualBoyAdvance.exe
+
+    
+    - assets/icons/nes_icon.png
+    - assets/icons/snes_icon.png
+    - assets/icons/nintendo64_icon.jpg
+    - assets/icons/gba_icon.png
+    - assets/icons/nintendods_icon.png
+    - assets/icons/nintendods_icon2.png
+    - assets/icons/nintendo64_icon3.png
+    - assets/icons/test_icon.jpg
+
+    - assets\nesGames\temp.txt.txt
+    - assets/nesGames/Super_Mario_Bros.nes
+    - assets\NESLogos\temp.txt.txt
+
+    - assets/snesGames/Super_Mario_World.sfc
+
+    - assets\gbGames\temp.txt.txt
+    - assets/gbGames/Pokemon_Red.gb
+
+    - assets/gbcGames/Pokemon_Crystal.gbc
+
+    - assets/gbaGames/FireEmblem(USA,Australia).gba
+    - assets/gbaGames/Space_Invaders.gba
+
+    - assets/n64Games/Legend_of_Zelda_Majora's_Mask.z64
+    - assets/n64Games/Legend_of_Zelda_Ocarina_of_Time.z64
+
+    - assets/dsGames/Phoenix_Wright_Ace_Attorney_Trials_and_Tribulations.nds
+    - assets/dsGames/Pokemon_Platinum.dsv
+    - assets/dsGames/Pokemon_White_2.dsv
+    
+    - assets/NESLogos/Super_Mario_Bros.jpg
+    - assets/SNESLogos/Super_Mario_World.jpg
+
+    - assets/GBLogos/Pokemon_Red.jpg
+
+    - assets/GBCLogos/Pokemon_Crystal.jpg
+
+    - assets/N64Logos/The_Legend_of_Zelda_MM.jpg
+    - assets/N64Logos/The_Legend_of_Zelda_OOT.jpg
+
+    - assets/DSLogos/Trials_and_Tribulations_DS.jpg
+
+    - assets/GBALogos/Fire_Emblem_Blazing_Blade.jpg
+    - assets/GBALogos/Space_Invaders.jpg
+
+
+
+
+
+    - assets\Project64\Project64.exe
+    - assets\Project64\Project64.lnk
+    - assets\Project64\unins000.dat
+    - assets\Project64\unins000.exe
+
+    - assets\Project64\Config\Cheats-User\temp.txt.txt
+
+    - assets\Project64\Config\Cheats\007 - The World Is Not Enough (E) (M3).cht
+    - assets\Project64\Config\Cheats\007 - The World Is Not Enough (U).cht
+    - assets\Project64\Config\Cheats\40 Winks (E) (M3) (Prototype).cht
+    - assets\Project64\Config\Cheats\64 Oozumou (J).cht
+    - assets\Project64\Config\Cheats\64 Oozumou 2 (J).cht
+    - assets\Project64\Config\Cheats\1080 Snowboarding (E) (M4).cht
+    - assets\Project64\Config\Cheats\1080 Snowboarding (JU) (M2).cht
+    - assets\Project64\Config\Cheats\A Bug's Life (E).cht
+    - assets\Project64\Config\Cheats\A Bug's Life (F).cht
+    - assets\Project64\Config\Cheats\A Bug's Life (I).cht
+    - assets\Project64\Config\Cheats\A Bug's Life (U).cht
+    - assets\Project64\Config\Cheats\Aerofighter's Assault (U).cht
+    - assets\Project64\Config\Cheats\AeroFighters Assault (E) (M3).cht
+    - assets\Project64\Config\Cheats\AeroGauge (E) (M3).cht
+    - assets\Project64\Config\Cheats\AeroGauge (J) (V1.0) (Kiosk Demo).cht
+    - assets\Project64\Config\Cheats\AeroGauge (J) (V1.1).cht
+    - assets\Project64\Config\Cheats\AeroGauge (U).cht
+    - assets\Project64\Config\Cheats\Aidyn Chronicles - The First Mage (E).cht
+    - assets\Project64\Config\Cheats\Aidyn Chronicles - The First Mage (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Aidyn Chronicles - The First Mage (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Air Boarder 64 (E).cht
+    - assets\Project64\Config\Cheats\Air Boarder 64 (J).cht
+    - assets\Project64\Config\Cheats\Akumajou Dracula Mokushiroku - Real Action Adventure (J).cht
+    - assets\Project64\Config\Cheats\Akumajou Dracula Mokushiroku Gaiden - Legend of Cornell (J).cht
+    - assets\Project64\Config\Cheats\All Star Baseball '99 (E).cht
+    - assets\Project64\Config\Cheats\All Star Tennis '99 (E).cht
+    - assets\Project64\Config\Cheats\All Star Tennis '99 (U).cht
+    - assets\Project64\Config\Cheats\All-Star Baseball '99 (U).cht
+    - assets\Project64\Config\Cheats\All-Star Baseball 2000 (U).cht
+    - assets\Project64\Config\Cheats\Animal Crossing (T-Eng).cht
+    - assets\Project64\Config\Cheats\Armorines - Project S.W.A.R.M. (E).cht
+    - assets\Project64\Config\Cheats\Armorines - Project S.W.A.R.M. (G).cht
+    - assets\Project64\Config\Cheats\Armorines - Project S.W.A.R.M. (U).cht
+    - assets\Project64\Config\Cheats\Armorines Project S..cht
+    - assets\Project64\Config\Cheats\Army Men - Air Combat (U).cht
+    - assets\Project64\Config\Cheats\Army Men - Sarge's Heroes (E) (M3).cht
+    - assets\Project64\Config\Cheats\Army Men - Sarge's Heroes (U).cht
+    - assets\Project64\Config\Cheats\Army Men - Sarge's Heroes 2 (U).cht
+    - assets\Project64\Config\Cheats\Asteroids Hyper 64 (U).cht
+    - assets\Project64\Config\Cheats\Automobili Lamborghini (E).cht
+    - assets\Project64\Config\Cheats\Automobili Lamborghini (U).cht
+    - assets\Project64\Config\Cheats\Baku Bomberman (J).cht
+    - assets\Project64\Config\Cheats\Baku Bomberman 2 (J).cht
+    - assets\Project64\Config\Cheats\Bakuretsu Muteki Bangaioh (J).cht
+    - assets\Project64\Config\Cheats\Banjo to Kazooie no Daibouken (J).cht
+    - assets\Project64\Config\Cheats\Banjo to Kazooie no Daibouken 2 (J).cht
+    - assets\Project64\Config\Cheats\Banjo-Kazooie (E).cht
+    - assets\Project64\Config\Cheats\Banjo-Kazooie (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Banjo-Kazooie (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Banjo-Tooie (A).cht
+    - assets\Project64\Config\Cheats\Banjo-Tooie (E).cht
+    - assets\Project64\Config\Cheats\Banjo-Tooie (U).cht
+    - assets\Project64\Config\Cheats\Bass Hunter 64 (E).cht
+    - assets\Project64\Config\Cheats\Bassmasters 2000 (U).cht
+    - assets\Project64\Config\Cheats\Batman Beyond - Return of the Joker (U).cht
+    - assets\Project64\Config\Cheats\Batman of the Future - Return of the Joker (E) (M3).cht
+    - assets\Project64\Config\Cheats\BattleTanx - Global Assault (E).cht
+    - assets\Project64\Config\Cheats\BattleTanx - Global Assault (U).cht
+    - assets\Project64\Config\Cheats\BattleTanx (U).cht
+    - assets\Project64\Config\Cheats\Battlezone - Rise of the Black Dogs (U).cht
+    - assets\Project64\Config\Cheats\Beetle Adventure Racing! (E) (M3).cht
+    - assets\Project64\Config\Cheats\Beetle Adventure Racing! (J).cht
+    - assets\Project64\Config\Cheats\Beetle Adventure Racing! (U) (M3).cht
+    - assets\Project64\Config\Cheats\Berney Must Die! by Nop_ (POM '99) (PD).cht
+    - assets\Project64\Config\Cheats\Berney Must Die!.cht
+    - assets\Project64\Config\Cheats\Big Mountain 2000 (U).cht
+    - assets\Project64\Config\Cheats\Bio F.R.E.A.K.S. (E).cht
+    - assets\Project64\Config\Cheats\Bio F.R.E.A.K.S. (U).cht
+    - assets\Project64\Config\Cheats\Biohazard 2 (J).cht
+    - assets\Project64\Config\Cheats\Blast Corps (E).cht
+    - assets\Project64\Config\Cheats\Blast Corps (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Blast Corps (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Blast Dozer (J).cht
+    - assets\Project64\Config\Cheats\Blues Brothers 2000 (E).cht
+    - assets\Project64\Config\Cheats\Blues Brothers 2000 (U).cht
+    - assets\Project64\Config\Cheats\Body Harvest (E).cht
+    - assets\Project64\Config\Cheats\Body Harvest (U).cht
+    - assets\Project64\Config\Cheats\Bokujou Monogatari 2 (J) (V1.0).cht
+    - assets\Project64\Config\Cheats\Bokujou Monogatari 2 (J) (V1.1).cht
+    - assets\Project64\Config\Cheats\Bokujou Monogatari 2 (J) (V1.2).cht
+    - assets\Project64\Config\Cheats\Bomberman - Arcade Edition (J) [T-Eng].cht
+    - assets\Project64\Config\Cheats\Bomberman 64 - Arcade Edition (J).cht
+    - assets\Project64\Config\Cheats\Bomberman 64 - The Second Attack! (U).cht
+    - assets\Project64\Config\Cheats\Bomberman 64 (E).cht
+    - assets\Project64\Config\Cheats\Bomberman 64 (U).cht
+    - assets\Project64\Config\Cheats\Bomberman Hero - Mirian Oujo wo Sukue! (J).cht
+    - assets\Project64\Config\Cheats\Bomberman Hero (E).cht
+    - assets\Project64\Config\Cheats\Bomberman Hero (U).cht
+    - assets\Project64\Config\Cheats\Buck Bumble (E).cht
+    - assets\Project64\Config\Cheats\Buck Bumble (J).cht
+    - assets\Project64\Config\Cheats\Buck Bumble (U).cht
+    - assets\Project64\Config\Cheats\Bust-A-Move '99 (U).cht
+    - assets\Project64\Config\Cheats\Bust-A-Move 2 - Arcade Edition (E).cht
+    - assets\Project64\Config\Cheats\Bust-A-Move 2 - Arcade Edition (U).cht
+    - assets\Project64\Config\Cheats\Bust-A-Move 3 DX.cht
+    - assets\Project64\Config\Cheats\California Speed (E).cht
+    - assets\Project64\Config\Cheats\California Speed (U).cht
+    - assets\Project64\Config\Cheats\Carmageddon 64 (E) (M4) (Eng-Spa-Fre-Ger).cht
+    - assets\Project64\Config\Cheats\Carmageddon 64 (U).cht
+    - assets\Project64\Config\Cheats\Castlevania - Legacy of Darkness (E).cht
+    - assets\Project64\Config\Cheats\Castlevania - Legacy of Darkness (U).cht
+    - assets\Project64\Config\Cheats\Castlevania (E) (M3).cht
+    - assets\Project64\Config\Cheats\Castlevania (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Castlevania (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Castlevania (U) (V1.2).cht
+    - assets\Project64\Config\Cheats\Centre Court Tennis (E).cht
+    - assets\Project64\Config\Cheats\Chameleon Twist (E).cht
+    - assets\Project64\Config\Cheats\Chameleon Twist (J).cht
+    - assets\Project64\Config\Cheats\Chameleon Twist (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Chameleon Twist (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Chameleon Twist 2 (E).cht
+    - assets\Project64\Config\Cheats\Chameleon Twist 2 (J).cht
+    - assets\Project64\Config\Cheats\Chameleon Twist 2 (U).cht
+    - assets\Project64\Config\Cheats\Charlie Blast's Territory (E).cht
+    - assets\Project64\Config\Cheats\Charlie Blast's Territory (U).cht
+    - assets\Project64\Config\Cheats\Chopper Attack (E).cht
+    - assets\Project64\Config\Cheats\Chopper Attack (U).cht
+    - assets\Project64\Config\Cheats\Choro Q 64 (J).cht
+    - assets\Project64\Config\Cheats\Choro Q 64 II - Hacha Mecha Grand Prix Race (J).cht
+    - assets\Project64\Config\Cheats\Chou Snowbow Kids (J).cht
+    - assets\Project64\Config\Cheats\Clay Fighter - Sculptor's Cut (U).cht
+    - assets\Project64\Config\Cheats\Clay Fighter 63 1-3 (E).cht
+    - assets\Project64\Config\Cheats\Clay Fighter 63 1-3 (U) (beta).cht
+    - assets\Project64\Config\Cheats\Clay Fighter 63 1-3 (U).cht
+    - assets\Project64\Config\Cheats\Command & Conquer (E).cht
+    - assets\Project64\Config\Cheats\Command & Conquer (U).cht
+    - assets\Project64\Config\Cheats\Conker's Bad Fur Day (E).cht
+    - assets\Project64\Config\Cheats\Conker's Bad Fur Day (U) (Demo) (V_ECTS_Decrypted).cht
+    - assets\Project64\Config\Cheats\Conker's Bad Fur Day (U).cht
+    - assets\Project64\Config\Cheats\Cruis'n Exotica (U).cht
+    - assets\Project64\Config\Cheats\Cruis'n USA (E) (1.0).cht
+    - assets\Project64\Config\Cheats\Cruis'n USA (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Cruis'n USA (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Cruis'n USA (U) (V1.2).cht
+    - assets\Project64\Config\Cheats\Cruis'n World (E).cht
+    - assets\Project64\Config\Cheats\Cruis'n World (U).cht
+    - assets\Project64\Config\Cheats\Custom Robo V2 (J).cht
+    - assets\Project64\Config\Cheats\CyberTiger (E).cht
+    - assets\Project64\Config\Cheats\CyberTiger (U).cht
+    - assets\Project64\Config\Cheats\Dance Dance Revolution - Disney Dancing Museum (J).cht
+    - assets\Project64\Config\Cheats\Dark Rift (E).cht
+    - assets\Project64\Config\Cheats\Dark Rift (U).cht
+    - assets\Project64\Config\Cheats\Deadly Arts (U).cht
+    - assets\Project64\Config\Cheats\Destruction Derby 64 (E).cht
+    - assets\Project64\Config\Cheats\Destruction Derby 64 (U).cht
+    - assets\Project64\Config\Cheats\Dezaemon 3D (J).cht
+    - assets\Project64\Config\Cheats\Diddy Kong Racing (E) (M3) (V1.0).cht
+    - assets\Project64\Config\Cheats\Diddy Kong Racing (E) (M3) (V1.1).cht
+    - assets\Project64\Config\Cheats\Diddy Kong Racing (U) (M2) (V1.0).cht
+    - assets\Project64\Config\Cheats\Diddy Kong Racing (U) (M2) (V1.1).cht
+    - assets\Project64\Config\Cheats\Die Hard 64 ProtoType (Disc 1).cht
+    - assets\Project64\Config\Cheats\Die Hard 64 ProtoType (Disc 2).cht
+    - assets\Project64\Config\Cheats\Die Hard 64 ProtoType (Disc 3).cht
+    - assets\Project64\Config\Cheats\DINO PLANET.cht
+    - assets\Project64\Config\Cheats\Disney's Donald Duck - Goin' Quackers (U).cht
+    - assets\Project64\Config\Cheats\Disney's Tarzan (E).cht
+    - assets\Project64\Config\Cheats\Disney's Tarzan (F).cht
+    - assets\Project64\Config\Cheats\Disney's Tarzan (G).cht
+    - assets\Project64\Config\Cheats\Disney's Tarzan (U).cht
+    - assets\Project64\Config\Cheats\DKONG Demo (PD).cht
+    - assets\Project64\Config\Cheats\Donald Duck - Quack Attack (E) (M5).cht
+    - assets\Project64\Config\Cheats\Donchan Puzzle Hanabi de Doon! (Aleck64).cht
+    - assets\Project64\Config\Cheats\Donkey Kong 64 (U) (Kiosk Demo).cht
+    - assets\Project64\Config\Cheats\Donkey Kong 64 (U).cht
+    - assets\Project64\Config\Cheats\Donkey Kong 64.cht
+    - assets\Project64\Config\Cheats\Doom 64 (E).cht
+    - assets\Project64\Config\Cheats\Doom 64 (J).cht
+    - assets\Project64\Config\Cheats\Doom 64 (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Doom 64 (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Doraemon - Nobita to 3tsu no Seireiseki (J).cht
+    - assets\Project64\Config\Cheats\Doraemon 3 - Nobita no Machi SOS! (J).cht
+    - assets\Project64\Config\Cheats\Doubutsu no Mori (J).cht
+    - assets\Project64\Config\Cheats\Dragon Ball Kart 64 [Beta].cht
+    - assets\Project64\Config\Cheats\Dragon Sword 64 (U) (Prototype).cht
+    - assets\Project64\Config\Cheats\Dual Heroes (E).cht
+    - assets\Project64\Config\Cheats\Dual Heroes (J).cht
+    - assets\Project64\Config\Cheats\Dual Heroes (U).cht
+    - assets\Project64\Config\Cheats\Duck Dodgers Starring Daffy Duck (U) (M3).cht
+    - assets\Project64\Config\Cheats\Duke Nukem - ZERO HOUR (E).cht
+    - assets\Project64\Config\Cheats\Duke Nukem - ZERO HOUR (F).cht
+    - assets\Project64\Config\Cheats\Duke Nukem - ZERO HOUR (U).cht
+    - assets\Project64\Config\Cheats\Duke Nukem 64 (E).cht
+    - assets\Project64\Config\Cheats\Duke Nukem 64 (F).cht
+    - assets\Project64\Config\Cheats\Duke Nukem 64 (PAL) (Proto).cht
+    - assets\Project64\Config\Cheats\Duke Nukem 64 (U).cht
+    - assets\Project64\Config\Cheats\Earthworm Jim 3D (E).cht
+    - assets\Project64\Config\Cheats\Earthworm Jim 3D (U).cht
+    - assets\Project64\Config\Cheats\ECW Hardcore Revolution (U).cht
+    - assets\Project64\Config\Cheats\Eleven Beat - World Tournament (Aleck64).cht
+    - assets\Project64\Config\Cheats\Elmo's Letter Adventure (U).cht
+    - assets\Project64\Config\Cheats\Elmo's Number Journey (U).cht
+    - assets\Project64\Config\Cheats\Eltale Monsters (J).cht
+    - assets\Project64\Config\Cheats\Excitebike 64 (E).cht
+    - assets\Project64\Config\Cheats\Excitebike 64 (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Excitebike 64 (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Extreme-G (E).cht
+    - assets\Project64\Config\Cheats\Extreme-G (J).cht
+    - assets\Project64\Config\Cheats\Extreme-G (U).cht
+    - assets\Project64\Config\Cheats\Extreme-G XG2 (E).cht
+    - assets\Project64\Config\Cheats\Extreme-G XG2 (J).cht
+    - assets\Project64\Config\Cheats\Extreme-G XG2 (U).cht
+    - assets\Project64\Config\Cheats\F-1 Pole Position 64 (U) (M3).cht
+    - assets\Project64\Config\Cheats\F-1 World Grand Prix II (E).cht
+    - assets\Project64\Config\Cheats\F-Zero X (E).cht
+    - assets\Project64\Config\Cheats\F-Zero X (J).cht
+    - assets\Project64\Config\Cheats\F-Zero X (U).cht
+    - assets\Project64\Config\Cheats\F1 Racing Championship (E).cht
+    - assets\Project64\Config\Cheats\FIFA - Road to World Cup 98 (E).cht
+    - assets\Project64\Config\Cheats\FIFA 99 (E).cht
+    - assets\Project64\Config\Cheats\FIFA Soccer 64 (E).cht
+    - assets\Project64\Config\Cheats\Fighter Destiny 2 (U).cht
+    - assets\Project64\Config\Cheats\Fighter's Destiny (E).cht
+    - assets\Project64\Config\Cheats\Fighter's Destiny (F).cht
+    - assets\Project64\Config\Cheats\Fighter's Destiny (G).cht
+    - assets\Project64\Config\Cheats\Fighter's Destiny (U).cht
+    - assets\Project64\Config\Cheats\Fighting Cup (J).cht
+    - assets\Project64\Config\Cheats\Fighting Force 64 (E).cht
+    - assets\Project64\Config\Cheats\Fighting Force 64 (U).cht
+    - assets\Project64\Config\Cheats\Flying Dragon (E).cht
+    - assets\Project64\Config\Cheats\Flying Dragon (U).cht
+    - assets\Project64\Config\Cheats\Forsaken 64 (E).cht
+    - assets\Project64\Config\Cheats\Forsaken 64 (G).cht
+    - assets\Project64\Config\Cheats\Forsaken 64 (U).cht
+    - assets\Project64\Config\Cheats\Fox Sports College Hoops '99 (U).cht
+    - assets\Project64\Config\Cheats\Frogger 2 (U) (Unreleased Alpha).cht
+    - assets\Project64\Config\Cheats\G.A.S.P!! Fighters' NEXTream (E).cht
+    - assets\Project64\Config\Cheats\G.A.S.P!! Fighters' NEXTream (J).cht
+    - assets\Project64\Config\Cheats\Gauntlet Legends (E).cht
+    - assets\Project64\Config\Cheats\Gauntlet Legends (J).cht
+    - assets\Project64\Config\Cheats\Gauntlet Legends (U).cht
+    - assets\Project64\Config\Cheats\Gex 3 - Deep Cover Gecko (E).cht
+    - assets\Project64\Config\Cheats\Gex 3 - Deep Cover Gecko (U).cht
+    - assets\Project64\Config\Cheats\Gex 64 - Enter the Gecko (E).cht
+    - assets\Project64\Config\Cheats\Gex 64 - Enter the Gecko (U).cht
+    - assets\Project64\Config\Cheats\Glover (E) (M3).cht
+    - assets\Project64\Config\Cheats\Glover (U).cht
+    - assets\Project64\Config\Cheats\Glover 2 (Prototype).cht
+    - assets\Project64\Config\Cheats\Goemon's Great Adventure (U).cht
+    - assets\Project64\Config\Cheats\GoldenEye 007 (E).cht
+    - assets\Project64\Config\Cheats\GoldenEye 007 (J).cht
+    - assets\Project64\Config\Cheats\GoldenEye 007 (U) [T+Bra1.0_Marquitos].cht
+    - assets\Project64\Config\Cheats\GoldenEye 007 (U).cht
+    - assets\Project64\Config\Cheats\Goldfinger 64 v1.0.cht
+    - assets\Project64\Config\Cheats\GT 64 - Championship Edition (E).cht
+    - assets\Project64\Config\Cheats\GT 64 - Championship Edition (U).cht
+    - assets\Project64\Config\Cheats\Harvest Moon 64 (U).cht
+    - assets\Project64\Config\Cheats\Hercules - The Legendary Journeys (E).cht
+    - assets\Project64\Config\Cheats\Hercules - The Legendary Journeys (U).cht
+    - assets\Project64\Config\Cheats\Hexen (E).cht
+    - assets\Project64\Config\Cheats\Hexen (F).cht
+    - assets\Project64\Config\Cheats\Hexen (G).cht
+    - assets\Project64\Config\Cheats\Hexen (J).cht
+    - assets\Project64\Config\Cheats\Hexen (U).cht
+    - assets\Project64\Config\Cheats\Hi Pai Paradise [Aleck64].cht
+    - assets\Project64\Config\Cheats\Holy Magic Century (E).cht
+    - assets\Project64\Config\Cheats\Holy Magic Century (F).cht
+    - assets\Project64\Config\Cheats\Holy Magic Century (G).cht
+    - assets\Project64\Config\Cheats\Hoshi no Kirby 64 (J) (V1.0).cht
+    - assets\Project64\Config\Cheats\Hoshi no Kirby 64 (J) (V1.1).cht
+    - assets\Project64\Config\Cheats\Hoshi no Kirby 64 (J) (V1.2).cht
+    - assets\Project64\Config\Cheats\Hoshi no Kirby 64 (J) (V1.3).cht
+    - assets\Project64\Config\Cheats\Hot Wheels Turbo Racing (E).cht
+    - assets\Project64\Config\Cheats\Hot Wheels Turbo Racing (U).cht
+    - assets\Project64\Config\Cheats\HSV Adventure Racing (A).cht
+    - assets\Project64\Config\Cheats\Hybrid Heaven (E) (M3).cht
+    - assets\Project64\Config\Cheats\Hybrid Heaven (J).cht
+    - assets\Project64\Config\Cheats\Hybrid Heaven (U).cht
+    - assets\Project64\Config\Cheats\Hydro Thunder (E).cht
+    - assets\Project64\Config\Cheats\Hydro Thunder (F).cht
+    - assets\Project64\Config\Cheats\Hydro Thunder (U).cht
+    - assets\Project64\Config\Cheats\Iggy-kun no Bura Bura Poyon (J).cht
+    - assets\Project64\Config\Cheats\Iggy's Reckin' Balls (E).cht
+    - assets\Project64\Config\Cheats\Iggy's Reckin' Balls (U).cht
+    - assets\Project64\Config\Cheats\In-Fisherman Bass Hunter 64 (U).cht
+    - assets\Project64\Config\Cheats\Indy Racing 2000 (U).cht
+    - assets\Project64\Config\Cheats\International Superstar Soccer '98 (E).cht
+    - assets\Project64\Config\Cheats\International Superstar Soccer 64 (E).cht
+    - assets\Project64\Config\Cheats\Jeopardy! (U).cht
+    - assets\Project64\Config\Cheats\Jeremy McGrath Supercross 2000 (U).cht
+    - assets\Project64\Config\Cheats\Jet Force Gemini (E) (M4).cht
+    - assets\Project64\Config\Cheats\Jet Force Gemini (U).cht
+    - assets\Project64\Config\Cheats\Jikuu Senshi Turok (J).cht
+    - assets\Project64\Config\Cheats\John Romero's Daikatana (E).cht
+    - assets\Project64\Config\Cheats\John Romero's Daikatana (J).cht
+    - assets\Project64\Config\Cheats\John Romero's Daikatana (U).cht
+    - assets\Project64\Config\Cheats\Ken Griffey Jr.'s Slugfest (U).cht
+    - assets\Project64\Config\Cheats\Killer Instinct Gold (E).cht
+    - assets\Project64\Config\Cheats\Killer Instinct Gold (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Killer Instinct Gold (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Killer Instinct Gold (U) (V1.2).cht
+    - assets\Project64\Config\Cheats\King Hill 64 - Extreme Snowboarding (J).cht
+    - assets\Project64\Config\Cheats\Kirby 64 - The Crystal Shards (E).cht
+    - assets\Project64\Config\Cheats\Kirby 64 - The Crystal Shards (U).cht
+    - assets\Project64\Config\Cheats\Knife Edge - Nose Gunner (E).cht
+    - assets\Project64\Config\Cheats\Knife Edge - Nose Gunner (J).cht
+    - assets\Project64\Config\Cheats\Knife Edge - Nose Gunner (U).cht
+    - assets\Project64\Config\Cheats\Knockout Kings 2000 (E).cht
+    - assets\Project64\Config\Cheats\Knockout Kings 2000 (U).cht
+    - assets\Project64\Config\Cheats\Kuru Kuru Fever (Aleck64).cht
+    - assets\Project64\Config\Cheats\LEGO Racers (E) (M10).cht
+    - assets\Project64\Config\Cheats\LEGO Racers (U) (M10).cht
+    - assets\Project64\Config\Cheats\Lode Runner 3-D (E).cht
+    - assets\Project64\Config\Cheats\Lode Runner 3-D (J).cht
+    - assets\Project64\Config\Cheats\Lode Runner 3-D (U).cht
+    - assets\Project64\Config\Cheats\Looney Tunes - Duck Dodgers (E) (M6).cht
+    - assets\Project64\Config\Cheats\Lylat Wars (A).cht
+    - assets\Project64\Config\Cheats\Lylat Wars (E) (M3).cht
+    - assets\Project64\Config\Cheats\Mace - The Dark Age (E).cht
+    - assets\Project64\Config\Cheats\Mace - The Dark Age (U).cht
+    - assets\Project64\Config\Cheats\Madden Football 64 (U).cht
+    - assets\Project64\Config\Cheats\Madden NFL 99 (U).cht
+    - assets\Project64\Config\Cheats\Madden NFL 2000 (U).cht
+    - assets\Project64\Config\Cheats\Madden NFL 2001 (U).cht
+    - assets\Project64\Config\Cheats\Magical Tetris Challenge (E).cht
+    - assets\Project64\Config\Cheats\Magical Tetris Challenge (G).cht
+    - assets\Project64\Config\Cheats\Magical Tetris Challenge (U).cht
+    - assets\Project64\Config\Cheats\Magical Tetris Challenge Arcade [Aleck64].cht
+    - assets\Project64\Config\Cheats\Magical Tetris Challenge featuring Mickey (J).cht
+    - assets\Project64\Config\Cheats\MAME 64 Emulator V1.0 (PD).cht
+    - assets\Project64\Config\Cheats\Manic Miner - Hidden Levels by RedboX (PD).cht
+    - assets\Project64\Config\Cheats\Manic Miner by RedboX (PD).cht
+    - assets\Project64\Config\Cheats\Mario Artist Paint Studio (J).cht
+    - assets\Project64\Config\Cheats\Mario Artist Polygon Studio (J).cht
+    - assets\Project64\Config\Cheats\Mario Golf (E).cht
+    - assets\Project64\Config\Cheats\Mario Golf (U).cht
+    - assets\Project64\Config\Cheats\Mario Golf 64 (J) (V1.0).cht
+    - assets\Project64\Config\Cheats\Mario Kart 64 (E) (V1.0).cht
+    - assets\Project64\Config\Cheats\Mario Kart 64 (E) (v1.1).cht
+    - assets\Project64\Config\Cheats\Mario Kart 64 (J) (V1.0).cht
+    - assets\Project64\Config\Cheats\Mario Kart 64 (J) (V1.1).cht
+    - assets\Project64\Config\Cheats\Mario Kart 64 (U).cht
+    - assets\Project64\Config\Cheats\Mario Party (E).cht
+    - assets\Project64\Config\Cheats\Mario Party (J).cht
+    - assets\Project64\Config\Cheats\Mario Party (U).cht
+    - assets\Project64\Config\Cheats\Mario Party 2 (U).cht
+    - assets\Project64\Config\Cheats\Mario Party 3 (E).cht
+    - assets\Project64\Config\Cheats\Mario Party 3 (U).cht
+    - assets\Project64\Config\Cheats\Mario Tennis (E).cht
+    - assets\Project64\Config\Cheats\Mario Tennis (U).cht
+    - assets\Project64\Config\Cheats\Mario Tennis 64 (J).cht
+    - assets\Project64\Config\Cheats\Mega Man 64 (Prototype).cht
+    - assets\Project64\Config\Cheats\Mega Man 64 (U).cht
+    - assets\Project64\Config\Cheats\Mickey No Racing Challenge USA (J).cht
+    - assets\Project64\Config\Cheats\Mickey's Speedway USA (E) (M5).cht
+    - assets\Project64\Config\Cheats\Mickey's Speedway USA (U).cht
+    - assets\Project64\Config\Cheats\Micro Machines 64 Turbo (E).cht
+    - assets\Project64\Config\Cheats\Micro Machines 64 Turbo (U).cht
+    - assets\Project64\Config\Cheats\Mike Piazza's Strike Zone (U).cht
+    - assets\Project64\Config\Cheats\Milo's Astro Lanes (U).cht
+    - assets\Project64\Config\Cheats\Mini Racers (U) (Prototype).cht
+    - assets\Project64\Config\Cheats\Mischief Makers (E).cht
+    - assets\Project64\Config\Cheats\Mischief Makers (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Mischief Makers (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Mission Impossible (E).cht
+    - assets\Project64\Config\Cheats\Mission Impossible (G).cht
+    - assets\Project64\Config\Cheats\Mission Impossible (I).cht
+    - assets\Project64\Config\Cheats\Mission Impossible (S).cht
+    - assets\Project64\Config\Cheats\Mission Impossible (U).cht
+    - assets\Project64\Config\Cheats\Monopoly (U) (M2).cht
+    - assets\Project64\Config\Cheats\Monster Truck Madness 64 (U).cht
+    - assets\Project64\Config\Cheats\Mortal Kombat 4 (E).cht
+    - assets\Project64\Config\Cheats\Mortal Kombat 4 (U).cht
+    - assets\Project64\Config\Cheats\Mortal Kombat Mythologies - Sub-Zero (U).cht
+    - assets\Project64\Config\Cheats\Mortal Kombat Trilogy (E).cht
+    - assets\Project64\Config\Cheats\Mortal Kombat Trilogy (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Mortal Kombat Trilogy (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Mortal Kombat Trilogy (U) (V1.2).cht
+    - assets\Project64\Config\Cheats\MRC - Multi Racing Championship (E).cht
+    - assets\Project64\Config\Cheats\MRC - Multi Racing Championship (U).cht
+    - assets\Project64\Config\Cheats\Ms. Pac-Man Maze Madness (U).cht
+    - assets\Project64\Config\Cheats\Mystical Ninja 2 Starring Goemon (E).cht
+    - assets\Project64\Config\Cheats\Mystical Ninja Starring Goemon (E).cht
+    - assets\Project64\Config\Cheats\Mystical Ninja Starring Goemon (U).cht
+    - assets\Project64\Config\Cheats\Nagano Winter Olympics '98 (U).cht
+    - assets\Project64\Config\Cheats\Namco Museum 64 (U).cht
+    - assets\Project64\Config\Cheats\NASCAR 99 (E).cht
+    - assets\Project64\Config\Cheats\NASCAR 99 (U).cht
+    - assets\Project64\Config\Cheats\NASCAR 2000 (U).cht
+    - assets\Project64\Config\Cheats\NBA Hangtime (U).cht
+    - assets\Project64\Config\Cheats\NBA In The Zone '98 (U).cht
+    - assets\Project64\Config\Cheats\NBA In The Zone '99 (U).cht
+    - assets\Project64\Config\Cheats\NBA Jam 99 (U).cht
+    - assets\Project64\Config\Cheats\NBA Jam 2000 (U).cht
+    - assets\Project64\Config\Cheats\NBA Live 2000 (U) (M4).cht
+    - assets\Project64\Config\Cheats\Neon Genesis Evangelion (J).cht
+    - assets\Project64\Config\Cheats\NFL Blitz 2001 (U).cht
+    - assets\Project64\Config\Cheats\NFL Quarterback Club 99 (U).cht
+    - assets\Project64\Config\Cheats\NFL Quarterback Club 2000 (U).cht
+    - assets\Project64\Config\Cheats\NFL Quarterback Club 2001 (U).cht
+    - assets\Project64\Config\Cheats\NHL Blades Of Steel '99 (U).cht
+    - assets\Project64\Config\Cheats\NHL Breakaway 98 (E).cht
+    - assets\Project64\Config\Cheats\NHL Breakaway 98 (U).cht
+    - assets\Project64\Config\Cheats\Nightmare Creatures (U).cht
+    - assets\Project64\Config\Cheats\Nintendo All-Star! Dairantou Smash Brothers (J).cht
+    - assets\Project64\Config\Cheats\Nuclear Strike 64 (E).cht
+    - assets\Project64\Config\Cheats\Nuclear Strike 64 (G).cht
+    - assets\Project64\Config\Cheats\Nuclear Strike 64 (U).cht
+    - assets\Project64\Config\Cheats\O.D.T (Or Die Trying) (E) (M5) (Unreleased Final).cht
+    - assets\Project64\Config\Cheats\O.D.T (Or Die Trying) (U) (M3) (Unreleased Final).cht
+    - assets\Project64\Config\Cheats\Off Road Challenge (E).cht
+    - assets\Project64\Config\Cheats\Off Road Challenge (U).cht
+    - assets\Project64\Config\Cheats\Ogre Battle 64 - Person of Lordly Caliber (J) (V1.1).cht
+    - assets\Project64\Config\Cheats\Ogre Battle 64 - Person of Lordly Caliber (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Ogre Battle 64 - Person of Lordly Caliber (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Operation WinBack (E) (M5).cht
+    - assets\Project64\Config\Cheats\Paper Mario (E) (M4).cht
+    - assets\Project64\Config\Cheats\Paper Mario (U).cht
+    - assets\Project64\Config\Cheats\Paperboy (E).cht
+    - assets\Project64\Config\Cheats\Paperboy (U).cht
+    - assets\Project64\Config\Cheats\Penny Racers (E).cht
+    - assets\Project64\Config\Cheats\Penny Racers (U).cht
+    - assets\Project64\Config\Cheats\Perfect Dark (E).cht
+    - assets\Project64\Config\Cheats\Perfect Dark (J).cht
+    - assets\Project64\Config\Cheats\Perfect Dark (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Perfect Dark (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\PGA European Tour (U).cht
+    - assets\Project64\Config\Cheats\Pilotwings 64 (E) (M3).cht
+    - assets\Project64\Config\Cheats\Pilotwings 64 (J).cht
+    - assets\Project64\Config\Cheats\Pilotwings 64 (U).cht
+    - assets\Project64\Config\Cheats\Pokemon Snap (A).cht
+    - assets\Project64\Config\Cheats\Pokemon Snap (E).cht
+    - assets\Project64\Config\Cheats\Pokemon Snap (F).cht
+    - assets\Project64\Config\Cheats\Pokemon Snap (G).cht
+    - assets\Project64\Config\Cheats\Pokemon Snap (I).cht
+    - assets\Project64\Config\Cheats\Pokemon Snap (J) (V1.0).cht
+    - assets\Project64\Config\Cheats\Pokemon Snap (S).cht
+    - assets\Project64\Config\Cheats\Pokemon Snap (U).cht
+    - assets\Project64\Config\Cheats\Pokemon Snap Station (U).cht
+    - assets\Project64\Config\Cheats\Pokemon Stadium - Kiosk (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Pokemon Stadium (E).cht
+    - assets\Project64\Config\Cheats\Pokemon Stadium (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Pokemon Stadium (U) (V1.2).cht
+    - assets\Project64\Config\Cheats\Pokemon Stadium 2 (E).cht
+    - assets\Project64\Config\Cheats\Pokemon Stadium 2 (U).cht
+    - assets\Project64\Config\Cheats\Polaris SnoCross (U).cht
+    - assets\Project64\Config\Cheats\POM-Spacer By Memir.cht
+    - assets\Project64\Config\Cheats\Power Rangers - Lightspeed Rescue (U).cht
+    - assets\Project64\Config\Cheats\Puyo Puyo Sun 64 (J).cht
+    - assets\Project64\Config\Cheats\Quake 64 (E).cht
+    - assets\Project64\Config\Cheats\Quake 64 (U).cht
+    - assets\Project64\Config\Cheats\Quake II (E).cht
+    - assets\Project64\Config\Cheats\Quake II (U).cht
+    - assets\Project64\Config\Cheats\Quest 64 (U).cht
+    - assets\Project64\Config\Cheats\Rakuga Kids (E).cht
+    - assets\Project64\Config\Cheats\Rakuga Kids (J).cht
+    - assets\Project64\Config\Cheats\Rally Challenge 2000 (U).cht
+    - assets\Project64\Config\Cheats\Rampage - World Tour (U).cht
+    - assets\Project64\Config\Cheats\Rampage 2 - Universal Tour (U).cht
+    - assets\Project64\Config\Cheats\Rat Attack (U) (M6).cht
+    - assets\Project64\Config\Cheats\Rayman 2 - The Great Escape (E).cht
+    - assets\Project64\Config\Cheats\Rayman 2 - The Great Escape (U) (M5).cht
+    - assets\Project64\Config\Cheats\Razor Freestyle Scooter (U).cht
+    - assets\Project64\Config\Cheats\Re-Volt (E).cht
+    - assets\Project64\Config\Cheats\Re-Volt (U).cht
+    - assets\Project64\Config\Cheats\Ready 2 Rumble Boxing (E).cht
+    - assets\Project64\Config\Cheats\Ready 2 Rumble Boxing (U).cht
+    - assets\Project64\Config\Cheats\Ready 2 Rumble Boxing Round 2 (U).cht
+    - assets\Project64\Config\Cheats\Resident Evil 2 (E).cht
+    - assets\Project64\Config\Cheats\Resident Evil 2 (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Resident Evil 2 (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Road Rash 64 (E).cht
+    - assets\Project64\Config\Cheats\Road Rash 64 (U).cht
+    - assets\Project64\Config\Cheats\Roadsters Trophy (E) (M6).cht
+    - assets\Project64\Config\Cheats\Roadsters Trophy (U) (M3).cht
+    - assets\Project64\Config\Cheats\Robotron 64 (E).cht
+    - assets\Project64\Config\Cheats\Robotron 64 (U).cht
+    - assets\Project64\Config\Cheats\Rocket - Robot on Wheels (E).cht
+    - assets\Project64\Config\Cheats\Rocket - Robot on Wheels (U).cht
+    - assets\Project64\Config\Cheats\Rockman DASH.cht
+    - assets\Project64\Config\Cheats\RR64 - Ridge Racer 64 (E).cht
+    - assets\Project64\Config\Cheats\RR64 - Ridge Racer 64 (U).cht
+    - assets\Project64\Config\Cheats\Rugrats - Treasure Hunt (E).cht
+    - assets\Project64\Config\Cheats\Rugrats in Paris - The Movie (E).cht
+    - assets\Project64\Config\Cheats\Rugrats in Paris - The Movie (U).cht
+    - assets\Project64\Config\Cheats\Rush 2 - Extreme Racing USA (U).cht
+    - assets\Project64\Config\Cheats\S.C.A.R.S. (E).cht
+    - assets\Project64\Config\Cheats\S.C.A.R.S. (U).cht
+    - assets\Project64\Config\Cheats\San Francisco Rush - Extreme Racing (E).cht
+    - assets\Project64\Config\Cheats\San Francisco Rush - Extreme Racing (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\San Francisco Rush - Extreme Racing (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\San Francisco Rush 2 - Extreme Racing USA (E).cht
+    - assets\Project64\Config\Cheats\San Francisco Rush 2049 (E).cht
+    - assets\Project64\Config\Cheats\San Francisco Rush 2049 (U).cht
+    - assets\Project64\Config\Cheats\Scooby-Doo! - Classic Creep Capers (E).cht
+    - assets\Project64\Config\Cheats\Scooby-Doo! - Classic Creep Capers (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Scooby-Doo! - Classic Creep Capers (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Shadow Man (F).cht
+    - assets\Project64\Config\Cheats\Shadow Man (U).cht
+    - assets\Project64\Config\Cheats\Shadowgate 64 - Trials Of The Four Towers (E) (M3) (Fre-Ger-Dut).cht
+    - assets\Project64\Config\Cheats\Shadowgate 64 - Trials Of The Four Towers (E).cht
+    - assets\Project64\Config\Cheats\Shadowgate 64 - Trials Of The Four Towers (J).cht
+    - assets\Project64\Config\Cheats\Shadowgate 64 - Trials Of The Four Towers (U) (M2).cht
+    - assets\Project64\Config\Cheats\Shadowman (E).cht
+    - assets\Project64\Config\Cheats\Shadowman (G).cht
+    - assets\Project64\Config\Cheats\Sim City 64 (J).cht
+    - assets\Project64\Config\Cheats\Sin & Punishment - Successor of the Earth (U).cht
+    - assets\Project64\Config\Cheats\Sin and Punishment - Sora no Kokeisha (J) [T].cht
+    - assets\Project64\Config\Cheats\Snowboard Kids (E).cht
+    - assets\Project64\Config\Cheats\Snowboard Kids (U).cht
+    - assets\Project64\Config\Cheats\Snowboard Kids 2 (E).cht
+    - assets\Project64\Config\Cheats\Snowboard Kids 2 (U).cht
+    - assets\Project64\Config\Cheats\Snowbow Kids (J).cht
+    - assets\Project64\Config\Cheats\South Park - Chef's Luv Shack (U).cht
+    - assets\Project64\Config\Cheats\South Park (E).cht
+    - assets\Project64\Config\Cheats\South Park (G).cht
+    - assets\Project64\Config\Cheats\South Park (U).cht
+    - assets\Project64\Config\Cheats\South Park Rally (E).cht
+    - assets\Project64\Config\Cheats\South Park Rally (U).cht
+    - assets\Project64\Config\Cheats\Space Invaders (U).cht
+    - assets\Project64\Config\Cheats\Space Station Silicon Valley (E) (M7).cht
+    - assets\Project64\Config\Cheats\Space Station Silicon Valley (U).cht
+    - assets\Project64\Config\Cheats\Spacer by Memir (POM '99) (PD).cht
+    - assets\Project64\Config\Cheats\Spider-Man (U).cht
+    - assets\Project64\Config\Cheats\Star Fox 64 (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Star Fox 64 (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Star Soldier - Vanishing Earth (J).cht
+    - assets\Project64\Config\Cheats\Star Soldier - Vanishing Earth (U).cht
+    - assets\Project64\Config\Cheats\Star Soldier - Vanishing Earth Arcade (Aleck64).cht
+    - assets\Project64\Config\Cheats\Star Wars - Rogue Squadron (E) (V1.1).cht
+    - assets\Project64\Config\Cheats\Star Wars - Rogue Squadron (E).cht
+    - assets\Project64\Config\Cheats\Star Wars - Shadows of the Empire (E).cht
+    - assets\Project64\Config\Cheats\Star Wars - Shadows of the Empire (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Star Wars - Shadows of the Empire (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Star Wars - Shadows of the Empire (U) (V1.2).cht
+    - assets\Project64\Config\Cheats\Star Wars Episode I - Battle for Naboo (E).cht
+    - assets\Project64\Config\Cheats\Star Wars Episode I - Racer (E).cht
+    - assets\Project64\Config\Cheats\Star Wars Episode I - Racer (J).cht
+    - assets\Project64\Config\Cheats\Star Wars Episode I - Racer (U).cht
+    - assets\Project64\Config\Cheats\StarCraft 64 (E).cht
+    - assets\Project64\Config\Cheats\StarCraft 64 (U).cht
+    - assets\Project64\Config\Cheats\Starshot - Space Circus Fever (E).cht
+    - assets\Project64\Config\Cheats\Super Mario 64 - Shindou Edition (J).cht
+    - assets\Project64\Config\Cheats\Super Mario 64 (E) (M3).cht
+    - assets\Project64\Config\Cheats\Super Mario 64 (J).cht
+    - assets\Project64\Config\Cheats\Super Mario 64 (U).cht
+    - assets\Project64\Config\Cheats\Super Robot Spirits (J).cht
+    - assets\Project64\Config\Cheats\Super Smash Bros (E).cht
+    - assets\Project64\Config\Cheats\Super Smash Bros. (A).cht
+    - assets\Project64\Config\Cheats\Super Smash Bros. (U).cht
+    - assets\Project64\Config\Cheats\Super Speed Race 64 (J).cht
+    - assets\Project64\Config\Cheats\Superman (E).cht
+    - assets\Project64\Config\Cheats\Superman (U) (M2) (Prototype).cht
+    - assets\Project64\Config\Cheats\Superman (U) (M3).cht
+    - assets\Project64\Config\Cheats\Taz Express (E) (M6).cht
+    - assets\Project64\Config\Cheats\Taz Express (U) (Prototype).cht
+    - assets\Project64\Config\Cheats\Tetrisphere (U).cht
+    - assets\Project64\Config\Cheats\The Legend of Zelda - Majora's Mask - Collector's Edition (E) (GC Version).cht
+    - assets\Project64\Config\Cheats\The Legend of Zelda - Majora's Mask - Collector's Edition (U) (GC).cht
+    - assets\Project64\Config\Cheats\The Legend of Zelda - Majora's Mask (E) (M4) (V1.0).cht
+    - assets\Project64\Config\Cheats\The Legend of Zelda - Majora's Mask (E) (M4) (V1.1).cht
+    - assets\Project64\Config\Cheats\The Legend of Zelda - Majora's Mask (U).cht
+    - assets\Project64\Config\Cheats\The Legend of Zelda - Ocarina of Time - Master Quest (E) [f1] (NTSC).cht
+    - assets\Project64\Config\Cheats\The Legend of Zelda - Ocarina of Time - Master Quest (E) [h1C].cht
+    - assets\Project64\Config\Cheats\The Legend of Zelda - Ocarina of Time - Master Quest (E).cht
+    - assets\Project64\Config\Cheats\The Legend of Zelda - Ocarina of Time (E) (GC Version).cht
+    - assets\Project64\Config\Cheats\The Legend of Zelda - Ocarina of Time (E) (V1.0).cht
+    - assets\Project64\Config\Cheats\The Legend of Zelda - Ocarina of Time (E) (V1.1).cht
+    - assets\Project64\Config\Cheats\The Legend of Zelda - Ocarina of Time (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\The Legend of Zelda - Ocarina of Time (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\The Legend of Zelda - Ocarina of Time (U) (V1.2).cht
+    - assets\Project64\Config\Cheats\The New Tetris (U).cht
+    - assets\Project64\Config\Cheats\The Powerpuff Girls - Chemical X-traction (U).cht
+    - assets\Project64\Config\Cheats\Tigger's Honey Hunt (E).cht
+    - assets\Project64\Config\Cheats\Tom and Jerry in Fists of Furry (E) (M6).cht
+    - assets\Project64\Config\Cheats\Tom and Jerry in Fists of Furry (U).cht
+    - assets\Project64\Config\Cheats\Tom Clancy's Rainbow Six (U).cht
+    - assets\Project64\Config\Cheats\Tony Hawk's Pro Skater (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Tony Hawk's Pro Skater (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Tony Hawk's Pro Skater 1 (E).cht
+    - assets\Project64\Config\Cheats\Tony Hawk's Pro Skater 2 (E).cht
+    - assets\Project64\Config\Cheats\Tony Hawk's Pro Skater 2 (U).cht
+    - assets\Project64\Config\Cheats\Tony Hawk's Pro Skater 3 (U).cht
+    - assets\Project64\Config\Cheats\Top Gear Hyper-Bike (E).cht
+    - assets\Project64\Config\Cheats\Top Gear Hyper-Bike (U).cht
+    - assets\Project64\Config\Cheats\Top Gear Overdrive (E).cht
+    - assets\Project64\Config\Cheats\Top Gear Overdrive (J).cht
+    - assets\Project64\Config\Cheats\Top Gear Overdrive (U).cht
+    - assets\Project64\Config\Cheats\Top Gear Rally (E).cht
+    - assets\Project64\Config\Cheats\Top Gear Rally (U).cht
+    - assets\Project64\Config\Cheats\Top Gear Rally 2 (E).cht
+    - assets\Project64\Config\Cheats\Top Gear Rally 2 (U).cht
+    - assets\Project64\Config\Cheats\Top Gear Rally 2.cht
+    - assets\Project64\Config\Cheats\Tower & Shaft (Aleck64).cht
+    - assets\Project64\Config\Cheats\Toy Story 2 (E).cht
+    - assets\Project64\Config\Cheats\Toy Story 2 (F).cht
+    - assets\Project64\Config\Cheats\Toy Story 2 (G).cht
+    - assets\Project64\Config\Cheats\Toy Story 2 (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Toy Story 2 (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Transformers - Beast Wars Metals 64 (J).cht
+    - assets\Project64\Config\Cheats\Transformers - Beast Wars Transmetal (U).cht
+    - assets\Project64\Config\Cheats\Tsumi to Batsu - Hoshi no Keishousha (J).cht
+    - assets\Project64\Config\Cheats\Turok - Dinosaur Hunter (E) (V1.0).cht
+    - assets\Project64\Config\Cheats\Turok - Dinosaur Hunter (E) (V1.1).cht
+    - assets\Project64\Config\Cheats\Turok - Dinosaur Hunter (G).cht
+    - assets\Project64\Config\Cheats\Turok - Dinosaur Hunter (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Turok - Dinosaur Hunter (U) (V1.1) (V1.2).cht
+    - assets\Project64\Config\Cheats\Turok - Rage Wars (E).cht
+    - assets\Project64\Config\Cheats\Turok - Rage Wars (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Turok - Rage Wars (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Turok 2 - Seeds of Evil (E) (Kiosk Demo).cht
+    - assets\Project64\Config\Cheats\Turok 2 - Seeds of Evil (E).cht
+    - assets\Project64\Config\Cheats\Turok 2 - Seeds of Evil (FGD).cht
+    - assets\Project64\Config\Cheats\Turok 2 - Seeds of Evil (U) (Kiosk Demo).cht
+    - assets\Project64\Config\Cheats\Turok 2 - Seeds of Evil (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Turok 2 - Seeds of Evil (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Turok 3 - Shadow of Oblivion (E).cht
+    - assets\Project64\Config\Cheats\Turok 3 - Shadow of Oblivion (U) (Beta-V20000531).cht
+    - assets\Project64\Config\Cheats\Turok 3 - Shadow of Oblivion (U) (Beta-WIP).cht
+    - assets\Project64\Config\Cheats\Turok 3 - Shadow of Oblivion (U) (Beta).cht
+    - assets\Project64\Config\Cheats\Turok 3 - Shadow of Oblivion (U).cht
+    - assets\Project64\Config\Cheats\Twisted Edge Extreme Snowboarding (E).cht
+    - assets\Project64\Config\Cheats\Twisted Edge Extreme Snowboarding (U).cht
+    - assets\Project64\Config\Cheats\Ucchan Nanchan no Hono no Challenger - Denryuu Ira Ira Bou (J).cht
+    - assets\Project64\Config\Cheats\V-Rally Edition 99 (E).cht
+    - assets\Project64\Config\Cheats\V-Rally Edition 99 (U).cht
+    - assets\Project64\Config\Cheats\Viewpoint2064-Prototype.cht
+    - assets\Project64\Config\Cheats\Vigilante 8 - 2nd Offense (U).cht
+    - assets\Project64\Config\Cheats\Vigilante 8 (E).cht
+    - assets\Project64\Config\Cheats\Vigilante 8 (U).cht
+    - assets\Project64\Config\Cheats\Virtual Chess 64 (U) (M3).cht
+    - assets\Project64\Config\Cheats\Virtual Pool 64 (E).cht
+    - assets\Project64\Config\Cheats\Virtual Pool 64 (U).cht
+    - assets\Project64\Config\Cheats\Vivid Dolls (Aleck64).cht
+    - assets\Project64\Config\Cheats\Waialae Country Club - True Golf Classics (E).cht
+    - assets\Project64\Config\Cheats\Waialae Country Club - True Golf Classics (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Waialae Country Club - True Golf Classics (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\War Gods (E).cht
+    - assets\Project64\Config\Cheats\War Gods (U).cht
+    - assets\Project64\Config\Cheats\Wave Race 64 - Shindou Edition (J) (V1.2).cht
+    - assets\Project64\Config\Cheats\Wave Race 64 (E).cht
+    - assets\Project64\Config\Cheats\Wave Race 64 (J) (V1.0).cht
+    - assets\Project64\Config\Cheats\Wave Race 64 (J) (V1.1).cht
+    - assets\Project64\Config\Cheats\Wave Race 64 (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\Wave Race 64 (U) (V1.1).cht
+    - assets\Project64\Config\Cheats\Wayne Gretzky's 3D Hockey '98 (E).cht
+    - assets\Project64\Config\Cheats\Wayne Gretzky's 3D Hockey '98 (U).cht
+    - assets\Project64\Config\Cheats\Wayne Gretzky's 3D Hockey (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\WCW Mayhem (E).cht
+    - assets\Project64\Config\Cheats\WCW Mayhem (U).cht
+    - assets\Project64\Config\Cheats\WCW-nWo Revenge (E).cht
+    - assets\Project64\Config\Cheats\WCW-nWo Revenge (U).cht
+    - assets\Project64\Config\Cheats\Wetrix (E).cht
+    - assets\Project64\Config\Cheats\Wetrix (J).cht
+    - assets\Project64\Config\Cheats\Wetrix (U) (M6).cht
+    - assets\Project64\Config\Cheats\Wheel Of Fortune (U).cht
+    - assets\Project64\Config\Cheats\Wild Choppers (J).cht
+    - assets\Project64\Config\Cheats\WinBack - Covert Operations (U).cht
+    - assets\Project64\Config\Cheats\WinBack (J) (V1.0).cht
+    - assets\Project64\Config\Cheats\Wipeout 64 (E).cht
+    - assets\Project64\Config\Cheats\Wipeout 64 (U).cht
+    - assets\Project64\Config\Cheats\Wonder Project J2 - Koruro no Mori no Jozet (J).cht
+    - assets\Project64\Config\Cheats\Wonder Project J2 (U).cht
+    - assets\Project64\Config\Cheats\World Cup 98 (U) (M8).cht
+    - assets\Project64\Config\Cheats\WWF - War Zone (U).cht
+    - assets\Project64\Config\Cheats\WWF Attitude (U).cht
+    - assets\Project64\Config\Cheats\WWF No Mercy (E).cht
+    - assets\Project64\Config\Cheats\WWF No Mercy (U) (V1.0).cht
+    - assets\Project64\Config\Cheats\WWF WrestleMania 2000 (E).cht
+    - assets\Project64\Config\Cheats\WWF Wrestlemania 2000 (J).cht
+    - assets\Project64\Config\Cheats\WWF WrestleMania 2000 (U).cht
+    - assets\Project64\Config\Cheats\Xena - Warrior Princess - Talisman of Fate (E).cht
+    - assets\Project64\Config\Cheats\Xena - Warrior Princess - Talisman of Fate (U).cht
+    - assets\Project64\Config\Cheats\Yoshi's Story (E).cht
+    - assets\Project64\Config\Cheats\Yoshi's Story (U) (M2).cht
+    - assets\Project64\Config\Cheats\Yuke Yuke!! Trouble Makers (J).cht
+    - assets\Project64\Config\Cheats\Zelda no Densetsu - Mujura no Kamen - Zelda Collection Version (J) (GC).cht
+    - assets\Project64\Config\Cheats\Zelda no Densetsu - Mujura no Kamen (J) (V1.0).cht
+    - assets\Project64\Config\Cheats\Zelda no Densetsu - Mujura no Kamen (J) (V1.1).cht
+    - assets\Project64\Config\Cheats\Zelda no Densetsu - Toki no Ocarina (J) (V1.0).cht
+    - assets\Project64\Config\Cheats\Zelda no Densetsu - Toki no Ocarina (J) (V1.1).cht
+    - assets\Project64\Config\Cheats\Zelda no Densetsu - Toki no Ocarina (J) (V1.2).cht
+
+    - assets\Project64\Config\Enhancements\1080 Snowboarding (U).enh
+    - assets\Project64\Config\Enhancements\Aidyn Chronicles - The First Mage (U) [!] (V1.0).enh
+    - assets\Project64\Config\Enhancements\Armorines - Project S.W.A.R.M. (U).enh
+    - assets\Project64\Config\Enhancements\Automobili Lamborghini (E).enh
+    - assets\Project64\Config\Enhancements\Automobili Lamborghini (U).enh
+    - assets\Project64\Config\Enhancements\Banjo-Kazooie (U) (V1.0).enh
+    - assets\Project64\Config\Enhancements\Banjo-Kazooie (U) (V1.1).enh
+    - assets\Project64\Config\Enhancements\Banjo-Tooie (U).enh
+    - assets\Project64\Config\Enhancements\Beetle Adventure Racing! (U).enh
+    - assets\Project64\Config\Enhancements\Big Mountain 2000 (U).enh
+    - assets\Project64\Config\Enhancements\Body Harvest (U).enh
+    - assets\Project64\Config\Enhancements\Bomberman 64 (U).enh
+    - assets\Project64\Config\Enhancements\Bomberman Hero - Mirian Oujo wo Sukue! (J).enh
+    - assets\Project64\Config\Enhancements\Bomberman Hero (U).enh
+    - assets\Project64\Config\Enhancements\Diddy Kong Racing (E) (M3) (V1.0).enh
+    - assets\Project64\Config\Enhancements\Diddy Kong Racing (E) (M3) (V1.1).enh
+    - assets\Project64\Config\Enhancements\Diddy Kong Racing (J).enh
+    - assets\Project64\Config\Enhancements\Diddy Kong Racing (U) (M2) (V1.0).enh
+    - assets\Project64\Config\Enhancements\Diddy Kong Racing (U) (M2) (V1.1).enh
+    - assets\Project64\Config\Enhancements\Doubutsu no Mori (J).enh
+    - assets\Project64\Config\Enhancements\Dual Heroes (U).enh
+    - assets\Project64\Config\Enhancements\Duke Nukem - ZER0 H0UR (E).enh
+    - assets\Project64\Config\Enhancements\Duke Nukem - ZER0 H0UR (F).enh
+    - assets\Project64\Config\Enhancements\Duke Nukem - ZER0 H0UR (U).enh
+    - assets\Project64\Config\Enhancements\Excitebike 64 (U) (V1.0).enh
+    - assets\Project64\Config\Enhancements\F-1 Pole Position 64 (U) (M3).enh
+    - assets\Project64\Config\Enhancements\F-ZERO X (U).enh
+    - assets\Project64\Config\Enhancements\Forsaken 64 (U).enh
+    - assets\Project64\Config\Enhancements\Gex 3 - Deep Cover Gecko (U).enh
+    - assets\Project64\Config\Enhancements\Gex 64 - Enter the Gecko (U).enh
+    - assets\Project64\Config\Enhancements\GoldenEye 007 (U).enh
+    - assets\Project64\Config\Enhancements\Iggy's Reckin' Balls (U).enh
+    - assets\Project64\Config\Enhancements\Killer Instinct Gold (U) (V1.0).enh
+    - assets\Project64\Config\Enhancements\Kirby 64 - The Crystal Shards (U).enh
+    - assets\Project64\Config\Enhancements\Madden Football 64 (U).enh
+    - assets\Project64\Config\Enhancements\Mario Golf (U).enh
+    - assets\Project64\Config\Enhancements\Mario Kart 64 (E) (V1.0).enh
+    - assets\Project64\Config\Enhancements\Mario Kart 64 (E) (V1.1).enh
+    - assets\Project64\Config\Enhancements\Mario Kart 64 (J) (V1.0).enh
+    - assets\Project64\Config\Enhancements\Mario Kart 64 (J) (V1.1).enh
+    - assets\Project64\Config\Enhancements\Mario Kart 64 (U).enh
+    - assets\Project64\Config\Enhancements\Mario Party (E).enh
+    - assets\Project64\Config\Enhancements\Mario Party (J).enh
+    - assets\Project64\Config\Enhancements\Mario Party (U).enh
+    - assets\Project64\Config\Enhancements\Mario Party 2 (E).enh
+    - assets\Project64\Config\Enhancements\Mario Party 2 (J).enh
+    - assets\Project64\Config\Enhancements\Mario Party 2 (U).enh
+    - assets\Project64\Config\Enhancements\Mario Story (J).enh
+    - assets\Project64\Config\Enhancements\Mario Tennis (U).enh
+    - assets\Project64\Config\Enhancements\Mega Man 64 (U).enh
+    - assets\Project64\Config\Enhancements\Monopoly (U) (M2).enh
+    - assets\Project64\Config\Enhancements\Mortal Kombat Mythologies - Sub-Zero (U).enh
+    - assets\Project64\Config\Enhancements\Mystical Ninja 2 Starring Goemon (E) (M3).enh
+    - assets\Project64\Config\Enhancements\Mystical Ninja Starring Goemon (U).enh
+    - assets\Project64\Config\Enhancements\NHL 99 (U).enh
+    - assets\Project64\Config\Enhancements\Nightmare Creatures (U).enh
+    - assets\Project64\Config\Enhancements\Nintendo All-Star! Dairantou Smash Brothers (J).enh
+    - assets\Project64\Config\Enhancements\Paper Mario (U).enh
+    - assets\Project64\Config\Enhancements\Pilotwings 64 (E) (M3).enh
+    - assets\Project64\Config\Enhancements\Pilotwings 64 (J).enh
+    - assets\Project64\Config\Enhancements\Pilotwings 64 (U).enh
+    - assets\Project64\Config\Enhancements\Pokemon Snap (A).enh
+    - assets\Project64\Config\Enhancements\Pokemon Snap (E).enh
+    - assets\Project64\Config\Enhancements\Pokemon Snap (F).enh
+    - assets\Project64\Config\Enhancements\Pokemon Snap (G).enh
+    - assets\Project64\Config\Enhancements\Pokemon Snap (I).enh
+    - assets\Project64\Config\Enhancements\Pokemon Snap (J) (V1.0).enh
+    - assets\Project64\Config\Enhancements\Pokemon Snap (J) (V1.1).enh
+    - assets\Project64\Config\Enhancements\Pokemon Snap (S).enh
+    - assets\Project64\Config\Enhancements\Pokemon Snap (U).enh
+    - assets\Project64\Config\Enhancements\Pokemon Snap Station (U).enh
+    - assets\Project64\Config\Enhancements\Pokemon Stadium (U).enh
+    - assets\Project64\Config\Enhancements\Rayman 2 - The Great Escape.enh
+    - assets\Project64\Config\Enhancements\Rugrats - Scavenger Hunt (U).enh
+    - assets\Project64\Config\Enhancements\S.C.A.R.S. (U).enh
+    - assets\Project64\Config\Enhancements\Sin & Punishment (J).enh
+    - assets\Project64\Config\Enhancements\Snowboard Kids (U).enh
+    - assets\Project64\Config\Enhancements\Snowboard Kids 2 (U).enh
+    - assets\Project64\Config\Enhancements\Star Fox 64 (U) (V1.0).enh
+    - assets\Project64\Config\Enhancements\Star Soldier - Vanishing Earth (U).enh
+    - assets\Project64\Config\Enhancements\Star Wars - Rogue Squadron (U).enh
+    - assets\Project64\Config\Enhancements\Star Wars Episode I - Racer (U).enh
+    - assets\Project64\Config\Enhancements\Super Mario 64 (U).enh
+    - assets\Project64\Config\Enhancements\Super Smash Bros. (U).enh
+    - assets\Project64\Config\Enhancements\Super Speed Race 64 (J).enh
+    - assets\Project64\Config\Enhancements\Superman (U) (M3).enh
+    - assets\Project64\Config\Enhancements\Sydney 2000 (E).enh
+    - assets\Project64\Config\Enhancements\The Legend of Zelda - Majora's Mask (U).enh
+    - assets\Project64\Config\Enhancements\The Legend of Zelda - Ocarina of Time - Master Quest (E) (GC).enh
+    - assets\Project64\Config\Enhancements\The Legend of Zelda - Ocarina of Time - Master Quest (E) [f1] (NTSC).enh
+    - assets\Project64\Config\Enhancements\The Legend of Zelda - Ocarina of Time - Master Quest (E) [h1C].enh
+    - assets\Project64\Config\Enhancements\The Legend of Zelda - Ocarina of Time - Master Quest (U) (GC).enh
+    - assets\Project64\Config\Enhancements\The Legend of Zelda - Ocarina of Time (E) (GC).enh
+    - assets\Project64\Config\Enhancements\The Legend of Zelda - Ocarina of Time (E) (M3) (V1.0).enh
+    - assets\Project64\Config\Enhancements\The Legend of Zelda - Ocarina of Time (E) (M3) (V1.1).enh
+    - assets\Project64\Config\Enhancements\The Legend of Zelda - Ocarina of Time (U) (GC).enh
+    - assets\Project64\Config\Enhancements\The Legend of Zelda - Ocarina of Time (U) (Randomizer).enh
+    - assets\Project64\Config\Enhancements\The Legend of Zelda - Ocarina of Time (U) (V1.0).enh
+    - assets\Project64\Config\Enhancements\The Legend of Zelda - Ocarina of Time (U) (V1.1).enh
+    - assets\Project64\Config\Enhancements\The Legend of Zelda - Ocarina of Time (U) (V1.2).enh
+    - assets\Project64\Config\Enhancements\Turok - Dinosaur Hunter (U) (V1.0).enh
+    - assets\Project64\Config\Enhancements\Turok 2 - Seeds of Evil (U) (V1.0).enh
+    - assets\Project64\Config\Enhancements\Turok 3 - Shadow of Oblivion (U) (Beta).enh
+    - assets\Project64\Config\Enhancements\Turok 3 - Shadow of Oblivion (U).enh
+    - assets\Project64\Config\Enhancements\Wave Race 64 (U).enh
+    - assets\Project64\Config\Enhancements\Zelda no Densetsu - Mujura no Kamen - Zelda Collection Version (J) (GC).enh
+    - assets\Project64\Config\Enhancements\Zelda no Densetsu - Toki no Ocarina - Zelda Collection Version (J) (GC).enh
+    - assets\Project64\Config\Enhancements\Zelda no Densetsu - Toki no Ocarina (J) (V1.0).enh
+    - assets\Project64\Config\Enhancements\Zelda no Densetsu - Toki no Ocarina (J) (V1.1).enh
+    - assets\Project64\Config\Enhancements\Zelda no Densetsu - Toki no Ocarina (J) (V1.2).enh
+    - assets\Project64\Config\Enhancements\Zelda no Densetsu - Toki no Ocarina GC (J) (GC).enh
+    - assets\Project64\Config\Enhancements\Zelda no Densetsu - Toki no Ocarina GC URA (J) (GC).enh
+
+    - assets\Project64\Config\Audio.rdb
+    - assets\Project64\Config\Project64.cache3
+    - assets\Project64\Config\Project64.cfg
+    - assets\Project64\Config\Project64.rdb
+    - assets\Project64\Config\Project64.rdn
+    - assets\Project64\Config\Project64.rdx
+    - assets\Project64\Config\Project64.sc3
+    - assets\Project64\Config\Project64.zcache
+    - assets\Project64\Config\Video.rdb
+
+    - assets\Project64\Lang\Arabic.pj.Lang
+    - assets\Project64\Lang\Bosnian.pj.Lang
+    - assets\Project64\Lang\Brazilian Portuguese.pj.Lang
+    - assets\Project64\Lang\Bulgarian.pj.Lang
+    - assets\Project64\Lang\Catalan.pj.Lang
+    - assets\Project64\Lang\Chinese (Simplified).pj.Lang
+    - assets\Project64\Lang\Chinese (Traditional).pj.Lang
+    - assets\Project64\Lang\Czech.pj.Lang
+    - assets\Project64\Lang\Danish.pj.Lang
+    - assets\Project64\Lang\Dutch.pj.Lang
+    - assets\Project64\Lang\English.pj.Lang
+    - assets\Project64\Lang\Finnish.pj.Lang
+    - assets\Project64\Lang\French.pj.Lang
+    - assets\Project64\Lang\German_localised.pj.Lang
+    - assets\Project64\Lang\German.pj.Lang
+    - assets\Project64\Lang\Greek.pj.Lang
+    - assets\Project64\Lang\Hungarian.pj.Lang
+    - assets\Project64\Lang\Italian_alternative.pj.Lang
+    - assets\Project64\Lang\Italian.pj.Lang
+    - assets\Project64\Lang\Japanese.pj.Lang
+    - assets\Project64\Lang\Lithuanian.pj.Lang
+    - assets\Project64\Lang\Norwegian.pj.Lang
+    - assets\Project64\Lang\Polish.pj.Lang
+    - assets\Project64\Lang\Russian.pj.Lang
+    - assets\Project64\Lang\Spanish.pj.Lang
+    - assets\Project64\Lang\Swedish.pj.Lang
+    - assets\Project64\Lang\Turkish.pj.Lang
+    - assets\Project64\Lang\Ukrainian.pj.Lang
+
+    - assets\Project64\Logs\Glide64.log
+    - assets\Project64\Logs\Project64-audio.log
+    - assets\Project64\Logs\Project64.log
+
+    - assets\Project64\Plugin\Audio\Jabo_Dsound.dll
+    - assets\Project64\Plugin\Audio\Project64-Audio.dll
+
+    - assets\Project64\Plugin\GFX\Jabo_Direct3D8.dll
+    - assets\Project64\Plugin\GFX\Project64-Video.dll
+
+    - assets\Project64\Plugin\Input\PJ64_NRage.dll
+    - assets\Project64\Plugin\Input\Project64-Input.dll
+    - assets\Project64\Plugin\RSP\RSP 1.7.dll
+    - assets\Project64\Save\temp.txt.txt
+    - assets\Project64\Screenshots\temp.txt.txt
+    - assets\Project64\Textures\temp.txt.txt
+#   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
