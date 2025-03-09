@@ -59,13 +59,14 @@ Game gb1 = Game("Pokemon_red.gb", "gbGames", "assets/GBLogos/Pokemon_Red.jpg", "
 Game gbc1 = Game("Pokemon_Crystal.gbc", "gbcGames", "assets/GBCLogos/Pokemon_Crystal.jpg", "MGBA", "mGBA.exe");
 
 Game gba1 = Game("FireEmblem(USA,Australia).gba", "gbaGames", "assets/GBALogos/Fire_Emblem_Blazing_Blade.jpg", "MGBA", "mGBA.exe");
+Game gba2 = Game("Space_Invaders.gba", "gbaGames", "assets/GBALogos/Space_Invaders.jpg", "MGBA", "mGBA.exe");
 
 Game n641 = Game("Legend_of_Zelda_Majora's_Mask.z64", "n64Games","assets/N64Logos/The_Legend_of_Zelda_MM.jpg", "Project64", "Project64");
 Game n642 = Game("Legend_of_Zelda_Ocarina_of_Time.z64", "n64Games", "assets/N64Logos/The_Legend_of_Zelda_OOT.jpg", "Project64", "Project64");
 
 Game ds1 = Game("Phoenix_Wright_Ace_Attorney_Trials_and_Tribulations.nds", "dsGames", "assets/DSLogos/Trials_and_Tribulations_DS.jpg", "Desmume", "DeSmuME_0.9.11_x64.exe");
 
-List<Game>allGames = [nes1, snes1, gb1, gbc1, gba1, n641, n642, ds1];
+List<Game>allGames = [nes1, snes1, gb1, gbc1, gba1, gba2, n641, n642, ds1];
 
 List<Game>gbcGames = [gbc1];
 List<Game>gbaGames = [gba1];
